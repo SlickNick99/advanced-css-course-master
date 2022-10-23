@@ -1,0 +1,87 @@
+footer {
+  background-color: $color-grey-dark;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+}
+
+.footer {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    font-size: 1.6rem;
+    list-style: none;
+  }
+
+  &__text {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 400px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    transition: all 0.2s;
+
+    &:hover {
+      color: green;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.row-2 {
+  // max-width: 1400px;
+  color: white;
+}
+
+.footer-logo {
+  height: auto;
+  width: 15rem;
+}
+
+.col-1-of-2 {
+  display: flex;
+  // justify-content: space-between;
+
+  border-top: 1px solid $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
